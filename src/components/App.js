@@ -9,15 +9,15 @@ class App extends Component {
             { name: 'Sima', id: 'relativeListItem3 ' }
         ];
 
-        const relativeList = relative.map((relativeName) => {
-            return <li key={relativeName.id}>{relativeName.name}</li>
+        const relativeListAll = relative.map((relativeList) => {
+            return <li key={relativeList.id}>{relativeList.name}</li>
         })
 
         return (
             <div id="main">
                 {/* Do not remove the main div */
                     <ol>
-                        {relativeList}
+                        {relativeListAll}
                     </ol>
                 }
             </div>
