@@ -10,7 +10,7 @@ class App extends Component {
         ];
 
         const relatives = relative.map((relativeListAll) => {
-            return <li key={relativeListAll.id}>{relativeListAll.name}</li>
+            return <li key={relativeListAll.relativeList}>{relativeListAll.name}</li>
         })
 
         return (
