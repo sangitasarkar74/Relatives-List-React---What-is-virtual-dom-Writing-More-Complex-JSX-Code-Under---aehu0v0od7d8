@@ -9,16 +9,16 @@ class App extends Component {
             { name: 'Sima', id: 'relativeListItem3 ' }
         ];
 
-        const relativeListAll = relative.map((relativeList) => {
-            return <li key={relativeList.id}>{relativeList.name}</li>
+        const relativeList = relative.map((relativeListAll) => {
+            return <li key={relativeListAll.id}>{relativeListAll.name}</li>
         })
 
-        return (
-            <div id="main">
+        return (cd relative
+            < div id = "main" >
                 {/* Do not remove the main div */
-                    <ol>
-                        {relativeListAll}
-                    </ol>
+                    < ol >
+                { relativeList }
+                    </ol >
                 }
             </div>
         )
