@@ -13,11 +13,11 @@ class App extends Component {
             return <li key={relativeListAll.id}>{relativeListAll.name}</li>
         })
 
-        return (cd relative
-            < div id = "main" >
+        return (
+            < div id="main" >
                 {/* Do not remove the main div */
                     < ol >
-                { relativeList }
+                        {relativeList}
                     </ol >
                 }
             </div>
