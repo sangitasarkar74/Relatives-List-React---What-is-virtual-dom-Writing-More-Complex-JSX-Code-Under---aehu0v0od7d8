@@ -3,21 +3,15 @@ import '../styles/App.css';
 
 class App extends Component {
     render = () => {
-        const relative = [
-            { name: 'Tina', id: 'relativeListItem1' },
-            { name: 'Mina', id: 'relativeListItem2' },
-            { name: 'Sima', id: 'relativeListItem3 ' }
-        ];
 
-        const relatives = relative.map((relativeListAll) => {
-            return <li key={relativeListAll.id}>{relativeListAll.name}</li>
-        })
 
         return (
             < div id="main" >
                 {/* Do not remove the main div */
-                    < ol  >
-                        {relatives}
+                    <ol key="relativeList" >
+                        <li key="relativeListItem1">Tina</li>
+                        <li key="relativeListItem2">Mina</li>
+                        <li key="relativeListItem3">Sima</li>
                     </ol >
                 }
             </div>
